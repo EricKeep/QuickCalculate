@@ -3,6 +3,6 @@ Chrome extension allowing quick calculations without leaving a tab. Created beca
 to do quick calculations and don't always want to open another tab.
 
 TODO:
-  Figure out safe way of evaluating results so it plays nicely with chrome extension
-  Add more functionality (exponents)
-  Improve visuals
+  Figure out safe way of evaluating results so it plays nicely with chrome extension  
+  Add more functionality (exponents)  
+  Improve visuals  
