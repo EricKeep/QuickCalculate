@@ -6,5 +6,8 @@
 		"default_icon": "calculator-outline.png",
 		"default_popup": "popup.html",
 		"default_title": "QuickCalculate"
+	},
+	"sandbox": {
+		"pages": ["sandbox.html"]
 	}
 }

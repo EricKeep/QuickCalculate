@@ -1,0 +1,21 @@
+<!doctype HTML>
+<html>
+<body>
+	<script>
+		window.addEventListener('message', function(event){
+			var expression = event.data;
+			var res;
+			try{
+				res = eval(expression);
+			}
+			catch (e){
+				res = "Error";
+			}
+			event.source.postMessage({
+				result: res,
+				context: {thing: 'world'}
+			}, event.origin);
+	});
+	</script>
+</body>
+</html>

@@ -1,5 +1,5 @@
 body {
-	background-color: #d6fffa;
+	background-color: #fff6dd;
 	height: 320px;
 	width: 270px;
 }
@@ -98,4 +98,8 @@ body {
 }
 p {
 	line-height: 10px;
+}
+
+iframe {
+	display:none;
 }

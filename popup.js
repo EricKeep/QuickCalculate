@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	document.getElementById("C").addEventListener("click", function() { c("")});
 	document.getElementById("=").addEventListener("click", function() { e()});
 });
+
 function c(val){
 	document.getElementById("d").value = val;
 }
@@ -29,9 +30,14 @@ function v(val){
 }
 
 function e(){
-	try{
-		c(eval(document.getElementById("d").value))
-	} catch(e) {
-		c("Error")
-	}
+		var iframe = document.getElementById("innerHTML");
+		var message = document.getElementById("d").value;
+		iframe.contentWindow.postMessage(message, '*');
 }
+
+window.addEventListener('message', function(event) {
+		console.log("received");
+		if(event.data.result){
+			c(event.data.result);
+		}
+});
