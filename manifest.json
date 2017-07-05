@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "QuickCalculate",
-	"version": "0.1",
+	"version": "1.0",
 	"browser_action": {
 		"default_icon": "calculator-outline.png",
 		"default_popup": "popup.html",
@@ -9,5 +9,10 @@
 	},
 	"sandbox": {
 		"pages": ["sandbox.html"]
+	},
+	"icons": {
+		"16": "calculator16px.png",
+		"48": "calculator48px.png",
+		"128": "calculator128px.png"
 	}
 }
